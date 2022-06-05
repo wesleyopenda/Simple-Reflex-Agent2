@@ -3,11 +3,16 @@ import random
 class Environment(object): # create the environmrnt
     def __init__(self):
         self.location = ['a', 'b']
+        self.mode = ['t', 'l'] # thorough or light
         self.location_condition = {'a':'0',
                                    'b':'0'}
+        self.cleaning_method = {'a':'t',
+                                'b':'t'}
         self.vacuum_location = random.choice(self.location)
         self.location_condition['a'] = random.randint(0, 1)
         self.location_condition['b'] = random.randint(0, 1)
+        self.cleaning_method['a'] = random.choice(self.mode)
+        self.cleaning_method['b'] = random.choice(self.mode)
 
 class Agent(Environment): # create the agent
     def __init__(self, Environment):
