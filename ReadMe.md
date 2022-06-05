@@ -1,0 +1,1 @@
+This simple vacuum cleaning agent is able to apply different cleaning modes to its cleaning routes. If it cleaned a location thoroughly before, it will clean it lightly the second time. If a location was cleaned lightly the first time, it will be cleaned thoroughly the next time. 
